@@ -53,9 +53,11 @@ CAPTURAS
 ![alt text](<Captura de pantalla 2026-11-21 123119.png>)
 ![alt text](<Captura de pantalla 2026-11-21 123438.png>)
 
-Con el método **V1 Inserción**, al pasar de **10 000** a **100 000** elementos, el tiempo subió de **42,551** ms a **3257,119** ms es decir **76,5** veces más. Creo que pasó porque **al ser $O(n^2)$, las comparaciones y desplazamientos crecen de forma cuadrática**.
+EXPLICACION
 
-Con 100 000 elementos, Inserción tardó **3257,119** ms, mientras que **V3 Arrays.sort** tardó **8,340** ms. Esto muestra que **los algoritmos $O(n \log n)$ son muy superiores con grandes volúmenes** porque **dividen el arreglo en lugar de recorrerlo elemento por elemento**.
+Con el método V1 Inserción, al pasar de 10 000 a 100 000 elementos, el tiempo subió de 42,551 ms a 3257,119 ms es decir 76,5 veces más. Creo que pasó porque al ser O(n^2), las comparaciones y desplazamientos crecen de forma cuadrática.
 
-Con **100 000** elementos, **V4 Arrays.sort con Comparator** tardó **115,823** ms y **V3 Arrays.sort** tardó **8,340** ms. Esto puede deberse a **la sobrecarga de manejar objetos `Integer` y ejecutar el `Comparator` en lugar de ordenar tipos primitivos**.
+Con 100 000 elementos, Inserción tardó 3257,119 ms, mientras que V3 Arrays.sort tardó 8,340 ms. Esto muestra que los algoritmos O(n log n) son muy superiores con grandes volúmenes porque dividen el arreglo en lugar de recorrerlo elemento por elemento.
+
+Con 100 000 elementos, V4 Arrays.sort con Comparator tardó 115,823 ms y V3 Arrays.sort tardó 8,340 ms. Esto puede deberse a la sobrecarga de manejar objetos Integer y ejecutar el Comparator en lugar de ordenar tipos primitivos.
 
